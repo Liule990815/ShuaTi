@@ -11,6 +11,7 @@ using namespace std;
 		 3
 输出：	  1 2	
 */
+
 //求下标从a到b的vec[i]几何平均值
 double get_pow(int a, int b, vector<double>& vec, int n) {
 	if (b > n) {
