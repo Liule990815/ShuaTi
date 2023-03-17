@@ -17,7 +17,7 @@ int get_dis(int x1, int y1, int x2, int y2) { //计算坐标之间的距离
 	else dis_y = y2 - y1;
 	return dis_x + dis_y;
 }
-int get_min_dis(int x, int y, vector<pair<int, int>>& vec) {
+int get_min_dis(int x, int y, vector<pair<int, int>>& vec) { //得到最小距离
 	int min_dis = INT_MAX;
 	for (int i = 0; i < vec.size(); i++) {
 		if (vec[i].first == x && vec[i].second == y) continue;
@@ -35,8 +35,8 @@ int main() {
 	int c = 0;
 	cin >> r;
 	cin >> c;
-	vector<vector<int>> vec(r, vector<int>(c, 0));
-	for (int i = 0; i < r; i++) {
+	vector<vector<int>> vec(r, vector<int>(c, 0)); //初始化二位数组
+	for (int i = 0; i < r; i++) {   //输入矩阵A
 		for (int j = 0; j < c; j++) {
 			cin >> vec[i][j];
 			//cout << i << "," << j << ":" << vec[i][j] << endl;
@@ -50,7 +50,7 @@ int main() {
 	//	}
 	//	cout << endl;
 	//}
-	cout << "[";
+	cout << "[";    //输出矩阵B
 	for (int i = 0; i < r; i++) {
 		cout << "[";
 		for (int j = 0; j < c; j++) {
